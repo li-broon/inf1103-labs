@@ -14,7 +14,11 @@ while True:
             continue
 
         inventory += quantity
-        print(f"Added {quantity} to inventory. Total inventory: {inventory}")
+
+        if inventory > 500:
+            print("Inventory limit exceeded. Please enter a smaller quantity.")
+            failed_entries += 1
+            break
     else:
         print("Invalid input.")
         continue
