@@ -14,8 +14,9 @@ while True:
             continue
 
         inventory += quantity
-
         print(f"Added {quantity} to inventory. Total inventory: {inventory}")
     else:
         print("Invalid input.")
         continue
+
+    print(f"Current inventory: {inventory}")
