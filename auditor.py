@@ -23,4 +23,5 @@ while True:
         print("Invalid input.")
         continue
 
-    print(f"Current inventory: {inventory}")
+print(f"Total units processed: {inventory}")
+print(f"Failed entries: {failed_entries}")
