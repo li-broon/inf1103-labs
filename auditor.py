@@ -5,3 +5,11 @@ while True:
 
     if user_input.lower() == 'quit':
         break
+
+    if user_input.isdigit():
+        quantity = int(user_input)
+        inventory += quantity
+        print(f"Added {quantity} to inventory. Total inventory: {inventory}")
+    else:
+        print("Invalid input.")
+        continue
