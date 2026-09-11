@@ -8,7 +8,13 @@ while True:
 
     if user_input.isdigit():
         quantity = int(user_input)
+        if quantity < 0:
+            print("Quantity cannot be negative. Please enter a valid number.")
+            failed_entries += 1
+            continue
+
         inventory += quantity
+
         print(f"Added {quantity} to inventory. Total inventory: {inventory}")
     else:
         print("Invalid input.")
