@@ -6,9 +6,10 @@ while True:
 
     if user_input.lower() == 'quit':
         break
-
+    
     if user_input.isdigit():
         quantity = int(user_input)
+        
         if quantity < 0:
             print("Quantity cannot be negative. Please enter a valid number.")
             failed_entries += 1
@@ -22,6 +23,7 @@ while True:
             break
     else:
         print("Invalid input.")
+        failed_entries += 1
         continue
 
 print(f"Total units processed: {inventory}")
